@@ -1,0 +1,87 @@
+/* Estilos para o Carrossel */
+.carousel-inner img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do carrossel */
+    height: 400px; /* Define uma altura fixa para a imagem */
+    object-fit: cover; /* Faz a imagem cobrir todo o espaço disponível sem distorcer */
+}
+
+.carousel {
+    margin-top: 20px; /* Espaçamento superior para o carrossel */
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    background-image: url('https://via.placeholder.com/1920x400?text=Header+Image'); /* URL da imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a seção */
+    color: white; /* Cor do texto */
+    padding: 100px 0; /* Espaçamento superior e inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+.header h1 {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+}
+
+.header p {
+    font-size: 1.25rem; /* Tamanho da fonte da descrição */
+}
+
+/* Estilos para os cards */
+.card {
+    display: flex; /* Faz com que o card use flexbox */
+    flex-direction: column; /* Alinha os itens na coluna */
+    height: 100%; /* Faz com que o card use 100% da altura do container */
+}
+
+.card-body {
+    flex-grow: 1; /* Faz com que o corpo do card cresça para ocupar espaço */
+    display: flex; /* Flexbox para o conteúdo */
+    flex-direction: column; /* Alinha o conteúdo na coluna */
+    justify-content: space-between; /* Distribui espaço entre os elementos */
+}
+
+/* Estilos para o Jumbotron */
+.jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* Estilos para o Footer */
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
+
+.modal .modal-body input,
+.modal .modal-body textarea {
+    border: 1px solid #e6e6e6;
+    box-shadow: none;
+}
+
+.modal-header h4.modal-title {
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.modal-body label {
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* jQuery loading autocomplete */
+.ui-autocomplete-loading {
+    background: white url("/image/ui-anim_basic_16x16.gif") right center no-repeat;
+}
