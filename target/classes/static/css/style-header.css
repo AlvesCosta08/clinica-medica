@@ -1,63 +1,59 @@
-body {
-    padding-top: 56px; /* Espaço para a navbar fixa */
-}
+        body {
+            padding-top: 56px; /* Espaço para a navbar fixa */
+        }
 
-.navbar {
-    background-color: #087d45; /* Cor verde mais forte */
-}
+        .navbar {
+            background-color: #087d45; /* Cor verde mais forte */
+            transition: background-color 0.3s ease;
+        }
 
-.navbar .navbar-brand {
-    display: flex;
-    align-items: center;
-    font-weight: bold; /* Negrito para o nome da clínica */
-}
+        .navbar.scrolled {
+            background-color: rgba(0, 0, 0, 0.8); /* Cor ao rolar */
+        }
 
-.logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px; /* Espaçamento à direita do logo */
-}
+        .navbar .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: bold; /* Negrito para o nome da clínica */
+            color: white; /* Cor do texto */
+        }
 
-.nav-link {
-    color: white; /* Cor dos links */
-    transition: color 0.3s; /* Transição suave na cor */
-}
+        .nav-link, .btn-outline-light {
+            color: white; /* Cor dos links e botões */
+            transition: color 0.3s, background-color 0.3s; /* Transição suave */
+        }
 
-.nav-link:hover {
-    color: #ffdd57; /* Cor ao passar o mouse */
-}
+        .nav-link:hover, .btn-outline-light:hover {
+            color: #ffdd57; /* Cor ao passar o mouse */
+            background-color: transparent; /* Fundo transparente ao passar o mouse */
+        }
 
-.dropdown-menu {
-    background-color: #f8f9fa; /* Cor clara para o menu */
-    border-radius: 0.5rem; /* Arredondamento de bordas do menu */
-}
+        .dropdown-menu {
+            background-color: #f8f9fa; /* Cor clara para o menu */
+            border-radius: 0.5rem; /* Arredondamento de bordas do menu */
+        }
 
-.dropdown-item {
-    color: #212529; /* Cor padrão para os itens do dropdown */
-}
+        .dropdown-item {
+            color: #212529; /* Cor padrão para os itens do dropdown */
+        }
 
-.dropdown-item:hover {
-    background-color: #e2e6ea; /* Cor de fundo ao passar o mouse */
-}
+        .dropdown-item:hover {
+            background-color: #e2e6ea; /* Cor de fundo ao passar o mouse */
+        }
 
-.btn-outline-success {
-    border-color: white; /* Cor da borda do botão de login */
-}
+        .btn-outline-light {
+            border-color: white; /* Cor da borda do botão de login */
+        }
 
-.btn-outline-success:hover {
-    background-color: white; /* Fundo branco ao passar o mouse */
-    color: #28a745; /* Cor do texto ao passar o mouse */
-}
+        .btn-outline-light:hover {
+            background-color: white; /* Fundo branco ao passar o mouse */
+            color: #28a745; /* Cor do texto ao passar o mouse */
+        }
 
-.btn-success {
-    background-color: #198754; /* Cor de fundo do botão de cadastro */
-}
+        .btn-group .btn-light {
+            background-color: #198754; /* Cor de fundo do botão de usuário */
+            color: white;
+        }
 
-.btn-success:hover {
-    background-color: #218838; /* Cor ao passar o mouse no botão de cadastro */
-}
-
-#botao-login,
-#botao-cadastro {
-    margin: 0; /* Remove margens para melhor alinhamento */
-}
+        .btn-group .btn-light:hover {
+            background-color: #218838; /* Cor ao passar o mouse no botão de usuário */

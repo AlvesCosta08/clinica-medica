@@ -22,10 +22,16 @@ public class HomeController {
 	// login invalido
 	@GetMapping("/login-error")
 	public String loginError(ModelMap model) {
-		model.addAttribute("alerta","erro");
-		model.addAttribute("titulo","Credenciais inválidadas !");
-		model.addAttribute("texto","Login ou senha incorretos, tente novamente.");
-		model.addAttribute("subtexto","Acesso permitido apenas para cadastro já ativados.");
+		model.addAttribute("alerta", "erro");
+		model.addAttribute("titulo", "Credenciais inválidas!");
+		model.addAttribute("texto", "Login ou senha incorretos, tente novamente.");
+		model.addAttribute("subtexto", "Acesso permitido apenas para cadastro já ativados.");
 		return "login";
+	}
+
+	// logout
+	@GetMapping("/logout")
+	public String logout() {
+		return "redirect:/login?logout";
 	}
 }
